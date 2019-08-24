@@ -1,0 +1,44 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "photoalbums6a163777",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ],
+                "unauth": [
+                    "/GET"
+                ]
+            }
+        }
+    ],
+    "resourceName": "api1fc96d16",
+    "apiName": "api1fc96d16",
+    "functionArns": [
+        {
+            "lambdaFunction": "photoalbums6a163777"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "photo-albums-master-20190817062504-authRole",
+        "unAuthRoleName": "photo-albums-master-20190817062504-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "photoalbums6a163777",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
